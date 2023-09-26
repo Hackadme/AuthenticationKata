@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackadme.Csd.Authentication", "Hackadme.Csd.Authentication\Hackadme.Csd.Authentication.csproj", "{3BF7385D-0858-46EE-8EBE-E7C41CC23981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackadme.Csd.Authentication.Integration.Tests", "Hackadme.Csd.Authentication.Integration.Tests\Hackadme.Csd.Authentication.Integration.Tests.csproj", "{B1B2228E-38A6-42DE-AF54-9D6662551030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BF7385D-0858-46EE-8EBE-E7C41CC23981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF7385D-0858-46EE-8EBE-E7C41CC23981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF7385D-0858-46EE-8EBE-E7C41CC23981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF7385D-0858-46EE-8EBE-E7C41CC23981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B2228E-38A6-42DE-AF54-9D6662551030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B2228E-38A6-42DE-AF54-9D6662551030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B2228E-38A6-42DE-AF54-9D6662551030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B2228E-38A6-42DE-AF54-9D6662551030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE9D85A8-F374-4350-971E-D3F37FB288E0}
+	EndGlobalSection
+EndGlobal
