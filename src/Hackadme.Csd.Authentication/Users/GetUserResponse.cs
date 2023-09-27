@@ -2,7 +2,14 @@
 {
     public class GetUserResponse
     {
-        public Guid id { get; set; }
-        public string email { get; set; }
+        private readonly IUser user;
+
+        public GetUserResponse(IUser user)
+        {
+            this.user = user;
+        }
+
+        public Guid id => user.Id;
+        public string email => user.Email;
     }
 }

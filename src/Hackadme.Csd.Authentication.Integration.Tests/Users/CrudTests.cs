@@ -1,6 +1,9 @@
 using FluentAssertions;
 using Hackadme.Csd.Authentication.Tokens;
+using Hackadme.Csd.Authentication.Users;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Linq;
 using System.Net;
 using System.Text;
@@ -9,22 +12,34 @@ namespace Hackadme.Csd.Authentication.Integration.Tests.Users
 {
     public class CrudTests : IClassFixture<WebApplicationFactory<TokenController>>
     {
-        private readonly WebApplicationFactory<TokenController> factory;
+        private WebApplicationFactory<TokenController> factory;
 
         public CrudTests(WebApplicationFactory<TokenController> factory)
         {
             this.factory = factory;
         }
 
+
         [Fact]
         public async Task CreateGetSuccess()
         {
+            factory = factory.WithWebHostBuilder(builder =>
+            {
+                builder.ConfigureTestServices(services =>
+                {
+                    services.AddSingleton<IUserRepository>(new UserRepositoryFake());
+                });
+            });
+
             var id = await CreateTest();
             await GetTest(id);
         }
 
         private async Task<string> CreateTest()
         {
+
+
+
             var requestBody = @"{
                 ""email"": ""foo@hackadme.test"",
                 ""password"": ""bar123$""

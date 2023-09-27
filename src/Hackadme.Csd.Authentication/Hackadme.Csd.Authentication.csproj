@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hackadme.Csd.Authentication.Abstractions\Hackadme.Csd.Authentication.Abstractions.csproj" />
+    <ProjectReference Include="..\Hackadme.Csd.Authentication.Core\Hackadme.Csd.Authentication.Core.csproj" />
+    <ProjectReference Include="..\Hackadme.Csd.Authentication.Infrastructure\Hackadme.Csd.Authentication.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

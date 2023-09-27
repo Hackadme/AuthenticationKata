@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackadme.Csd.Authentication", "Hackadme.Csd.Authentication\Hackadme.Csd.Authentication.csproj", "{3BF7385D-0858-46EE-8EBE-E7C41CC23981}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackadme.Csd.Authentication", "Hackadme.Csd.Authentication\Hackadme.Csd.Authentication.csproj", "{3BF7385D-0858-46EE-8EBE-E7C41CC23981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackadme.Csd.Authentication.Integration.Tests", "Hackadme.Csd.Authentication.Integration.Tests\Hackadme.Csd.Authentication.Integration.Tests.csproj", "{B1B2228E-38A6-42DE-AF54-9D6662551030}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackadme.Csd.Authentication.Integration.Tests", "Hackadme.Csd.Authentication.Integration.Tests\Hackadme.Csd.Authentication.Integration.Tests.csproj", "{B1B2228E-38A6-42DE-AF54-9D6662551030}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackadme.Csd.Authentication.Core", "Hackadme.Csd.Authentication.Core\Hackadme.Csd.Authentication.Core.csproj", "{4F5881FE-265A-4556-9A9A-74093E369961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackadme.Csd.Authentication.Infrastructure", "Hackadme.Csd.Authentication.Infrastructure\Hackadme.Csd.Authentication.Infrastructure.csproj", "{CC416F30-FC7A-4CFA-A72D-1D51FC37B83F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackadme.Csd.Authentication.Abstractions", "Hackadme.Csd.Authentication.Abstractions\Hackadme.Csd.Authentication.Abstractions.csproj", "{0D6B1433-F929-4603-A0E7-D310291059D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{B1B2228E-38A6-42DE-AF54-9D6662551030}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B2228E-38A6-42DE-AF54-9D6662551030}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1B2228E-38A6-42DE-AF54-9D6662551030}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5881FE-265A-4556-9A9A-74093E369961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5881FE-265A-4556-9A9A-74093E369961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5881FE-265A-4556-9A9A-74093E369961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5881FE-265A-4556-9A9A-74093E369961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC416F30-FC7A-4CFA-A72D-1D51FC37B83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC416F30-FC7A-4CFA-A72D-1D51FC37B83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC416F30-FC7A-4CFA-A72D-1D51FC37B83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC416F30-FC7A-4CFA-A72D-1D51FC37B83F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6B1433-F929-4603-A0E7-D310291059D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6B1433-F929-4603-A0E7-D310291059D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6B1433-F929-4603-A0E7-D310291059D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6B1433-F929-4603-A0E7-D310291059D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

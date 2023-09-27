@@ -2,11 +2,13 @@
 {
     public class CreateUserResponse
     {
-        public CreateUserResponse(Guid id)
+        private readonly IUser user;
+
+        public CreateUserResponse(IUser user)
         {
-            this.id = id;
+            this.user = user;
         }
 
-        public Guid id { get; set; }
+        public Guid id => user.Id;
     }
 }
